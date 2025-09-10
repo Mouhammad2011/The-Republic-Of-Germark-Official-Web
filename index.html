@@ -3,45 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demokratic Republic of Germark</title>
+  <title>The Demokratic Republic of Germark</title>
   <style>
     :root {
-      --green: #228B22;
+      --green: #1a3d1a;
       --bright-green: #7CFC00;
-      --white: #ffffff;
-      --black: #000000;
-      --gray: #f5f5f5;
       --gold: #d4af37;
+      --white: #ffffff;
+      --gray: #f5f5f5;
     }
 
     body {
       margin: 0;
-      font-family: Georgia, serif;
+      font-family: 'Georgia', serif;
       background-color: var(--gray);
-      color: var(--black);
+      color: var(--green);
+      scroll-behavior: smooth;
     }
 
     header {
       background-color: var(--green);
       color: var(--white);
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
+      background-image: linear-gradient(to right, #1a3d1a, #228B22);
     }
 
     header img {
-      max-width: 150px;
+      max-width: 120px;
       margin-bottom: 20px;
     }
 
     header h1 {
-      margin: 0;
       font-size: 2.8em;
-      letter-spacing: 1px;
+      margin: 0;
     }
 
     header p {
-      font-style: italic;
       font-size: 1.2em;
+      font-style: italic;
       margin-top: 10px;
     }
 
@@ -53,7 +53,7 @@
     }
 
     nav a {
-      color: var(--black);
+      color: var(--green);
       text-decoration: none;
       padding: 14px 20px;
       font-weight: bold;
@@ -72,10 +72,15 @@
       padding: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-left: 5px solid var(--green);
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     section h2 {
-      font-family: "Palatino Linotype", serif;
       font-size: 1.8em;
       margin-bottom: 20px;
       border-bottom: 2px solid var(--bright-green);
@@ -115,7 +120,7 @@
   <header>
     <img src="Germark.png" alt="Germark Flag" />
     <h1>THE DEMOKRATIC REPUBLIC OF GERMARK</h1>
-    <p>Since 2025 — Small in size, mighty in spirit.</p>
+    <p>Founded by Mouhammad & Björn — Since 2025</p>
   </header>
 
   <nav>
@@ -129,18 +134,19 @@
 
   <section id="about">
     <h2>About Germark</h2>
-    <p>Founded in Haderslev, Denmark, Germark is a ceremonial micronation established by Mouhammad and Björn in 2025. It began as a symbolic colony and is preparing to declare full independence in December 2025. Germark’s territory rotates daily between its two co-presidents, reflecting shared leadership and hybrid sovereignty.</p>
+    <p>Germark is a ceremonial micronation founded in Haderslev, Denmark, by Mouhammad and Björn in 2025. It represents shared leadership, civic imagination, and peaceful sovereignty. Germark’s territory rotates daily between its co-presidents, and its Constitution affirms symbolic citizenship and cultural diplomacy.</p>
   </section>
 
   <section id="constitution">
     <h2>Constitution</h2>
-    <p>The Constitution of Germark outlines its dual presidency, symbolic citizenship, and ceremonial legal system. It affirms our commitment to peace, creativity, and civic imagination.</p>
-    <p><a href="Constitution_of_Germark.pdf" target="_blank" class="download-link">Download the full Constitution (PDF)</a></p>
+    <p>The Constitution of Germark outlines its dual presidency, symbolic legal system, and commitment to peace and creativity.</p>
+    <iframe src="Constitution_of_Germark.pdf"></iframe>
+    <p><a href="Constitution_of_Germark.pdf" target="_blank" class="download-link">Download Constitution (PDF)</a></p>
   </section>
 
   <section id="citizenship">
     <h2>Citizenship</h2>
-    <p>Citizenship is open to anyone who recognizes Germark’s values. Applicants may receive a ceremonial passport and participate in symbolic governance. To apply, contact the presidency with a short statement of intent.</p>
+    <p>Anyone who shares Germark’s values may apply for ceremonial citizenship. Citizens may receive a symbolic passport and participate in cultural governance. To apply, send a statement of intent to our diplomatic email.</p>
   </section>
 
   <section id="leadership">
@@ -153,14 +159,14 @@
 
   <section id="passport">
     <h2>Official Passport</h2>
-    <p>This ceremonial passport is issued to recognized citizens of Germark. It reflects our sovereign identity, shared leadership, and founding values.</p>
+    <p>This ceremonial passport is issued to recognized citizens of Germark. It reflects our sovereign identity and founding values.</p>
     <iframe src="Pas Germark watermarked.pdf"></iframe>
     <p><a href="Pas Germark watermarked.pdf" target="_blank" class="download-link">Download Passport (PDF)</a></p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: Germarkcontact@gmail.com<br>
+    <p>Email: <strong>Germarkcontact@gmail.com</strong><br>
     Location: Symbolic territory alternates daily between desks in Haderslev.</p>
   </section>
 
