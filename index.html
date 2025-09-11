@@ -3,176 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Demokratic Republic of Germark</title>
+  <title>Welcome to Germark</title>
   <style>
-    :root {
-      --green: #1a3d1a;
-      --bright-green: #7CFC00;
-      --gold: #d4af37;
-      --white: #ffffff;
-      --gray: #f5f5f5;
-    }
-
     body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: var(--gray);
-      color: var(--green);
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background-color: var(--green);
-      color: var(--white);
+      background-color: #000;
+      color: #00ff99;
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      padding: 60px 20px;
-      background-image: linear-gradient(to right, #1a3d1a, #228B22);
+      padding: 40px;
     }
-
-    header img {
-      max-width: 120px;
+    .flag {
+      width: 150px;
+      height: auto;
       margin-bottom: 20px;
     }
-
-    header h1 {
-      font-size: 2.8em;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2em;
-      font-style: italic;
-      margin-top: 10px;
-    }
-
-    nav {
-      background-color: var(--bright-green);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--green);
-      text-decoration: none;
-      padding: 14px 20px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: var(--green);
-      color: var(--white);
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: var(--white);
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-left: 5px solid var(--green);
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    section h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-      border-bottom: 2px solid var(--bright-green);
-      padding-bottom: 5px;
-    }
-
-    section p, section ul {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid var(--gold);
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    a.download-link {
-      color: var(--green);
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: var(--green);
-      color: var(--white);
-      text-align: center;
-      padding: 20px;
+    .qr {
       margin-top: 40px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #00ff99;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    iframe {
+      margin-top: 50px;
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
+  <img src="assets/germark-flag.png" alt="Germark Flag" class="flag" />
+  <h1>Welcome to Germark</h1>
+  <p>The digital republic of peace, unity, and code.</p>
 
-  <header>
-    <img src="Germark.png" alt="Germark Flag" />
-    <h1>THE DEMOKRATIC REPUBLIC OF GERMARK</h1>
-    <p>Founded by Mouhammad & Björn — Since 2025</p>
-  </header>
+  <div class="qr">
+    <h2>📱 Scan to Enter Germark on Your Phone</h2>
+    <img src="assets/germark-qr.png" alt="Germark QR Code" width="200" />
+  </div>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#constitution">Constitution</a>
-    <a href="#citizenship">Citizenship</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#passport">Passport</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <a href="https://germark.vercel.app" target="_blank" class="button">Launch Germark Web App</a>
 
-  <section id="about">
-    <h2>About Germark</h2>
-    <p>Germark is a ceremonial micronation founded in Haderslev, Denmark, by Mouhammad and Björn in 2025. It represents shared leadership, civic imagination, and peaceful sovereignty. Germark’s territory rotates daily between its co-presidents, and its Constitution affirms symbolic citizenship and cultural diplomacy.</p>
-  </section>
-
-  <section id="constitution">
-    <h2>Constitution</h2>
-    <p>The Constitution of Germark outlines its dual presidency, symbolic legal system, and commitment to peace and creativity.</p>
-    <iframe src="Constitution_of_Germark.pdf"></iframe>
-    <p><a href="Constitution_of_Germark.pdf" target="_blank" class="download-link">Download Constitution (PDF)</a></p>
-  </section>
-
-  <section id="citizenship">
-    <h2>Citizenship</h2>
-    <p>Anyone who shares Germark’s values may apply for ceremonial citizenship. Citizens may receive a symbolic passport and participate in cultural governance. To apply, send a statement of intent to our diplomatic email.</p>
-  </section>
-
-  <section id="leadership">
-    <h2>Leadership</h2>
-    <ul>
-      <li><strong>Mouhammad</strong> – Founder and Diplomatic Lead</li>
-      <li><strong>Björn</strong> – Co-Founder and Cultural Affairs</li>
-    </ul>
-  </section>
-
-  <section id="passport">
-    <h2>Official Passport</h2>
-    <p>This ceremonial passport is issued to recognized citizens of Germark. It reflects our sovereign identity and founding values.</p>
-    <iframe src="Pas Germark watermarked.pdf"></iframe>
-    <p><a href="Pas Germark watermarked.pdf" target="_blank" class="download-link">Download Passport (PDF)</a></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <strong>Germarkcontact@gmail.com</strong><br>
-    Location: Symbolic territory alternates daily between desks in Haderslev.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 The Demokratic Republic of Germark. All rights reserved.
-  </footer>
-
+  <iframe src="https://germark.vercel.app"></iframe>
 </body>
 </html>
