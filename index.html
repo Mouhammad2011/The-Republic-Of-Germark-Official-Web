@@ -17,9 +17,6 @@
       height: auto;
       margin-bottom: 20px;
     }
-    .qr {
-      margin-top: 40px;
-    }
     .button {
       display: inline-block;
       margin-top: 30px;
@@ -29,6 +26,21 @@
       font-weight: bold;
       border-radius: 6px;
       text-decoration: none;
+    }
+    .qr-section {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: #111;
+      border-radius: 10px;
+    }
+    .qr-section h2 {
+      color: #00ccff;
+      margin-bottom: 20px;
+    }
+    .qr-section img {
+      width: 200px;
+      border: 2px solid #00ff99;
+      border-radius: 8px;
     }
     iframe {
       margin-top: 50px;
@@ -44,12 +56,13 @@
   <h1>Welcome to Germark</h1>
   <p>The digital republic of peace, unity, and code.</p>
 
-  <div class="qr">
-    <h2>📱 Scan to Enter Germark on Your Phone</h2>
-    <img src="assets/germark-qr.png" alt="Germark QR Code" width="200" />
-  </div>
-
   <a href="https://germark.vercel.app" target="_blank" class="button">Launch Germark Web App</a>
+
+  <div class="qr-section">
+    <h2>📱 Scan to Enter Germark on Your Phone</h2>
+    <img src="assets/germark-qr.png" alt="Germark QR Code" />
+    <p style="margin-top: 10px; color: #aaa;">Use the Expo Go app to scan and launch Germark instantly.</p>
+  </div>
 
   <iframe src="https://germark.vercel.app"></iframe>
 </body>
